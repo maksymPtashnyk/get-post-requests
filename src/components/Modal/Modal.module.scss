@@ -1,0 +1,36 @@
+@import 'src/styles/variables';
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &__content {
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    position: relative;
+    max-width: 500px;
+    width: 95%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__body {
+    margin-top: 1em;
+  }
+}

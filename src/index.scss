@@ -1,0 +1,17 @@
+@use 'scss-reset/reset';
+@import 'src/styles/variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1170px;
+  margin-inline: auto;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+
+  background-color: $background_color;
+}

@@ -1,0 +1,58 @@
+@import 'src/styles/variables';
+
+.section {
+  padding: 140px 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding-inline: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-inline: 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  &__cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 29px;
+    }
+  }
+}
+
+.button {
+  background: $primary_color;
+  margin: 50px auto;
+  width: 120px;
+  height: 34px;
+  border-radius: 80px;
+  border: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #FFE302;
+  }
+}

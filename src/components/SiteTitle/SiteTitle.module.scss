@@ -1,0 +1,61 @@
+@import 'src/styles/variables';
+
+.section {
+  height: 500px;
+  text-align: center;
+  color: $white_color;
+
+  padding: 40px 16px;
+
+  background-image: url(../../../public/bg-image-mobile.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 380px) {
+    background-image: url(../../../public/bg-image-tablet.jpeg);
+  }
+
+  @media (min-width: 500px) {
+    padding: 60px 100px;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../../../public/bg-image-desctop.jpeg);
+    padding: 88px 194px;
+  }
+  @media (min-width: 1024px) {
+    height: 650px;
+    padding: 164px 332px;
+    background-image: url(../../../public/bg-image-full.jpeg);
+  }
+
+  @media (min-width: 1170px) {
+    padding: 164px 395px;
+  }
+
+
+
+  &__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  &__discribe {
+    margin-top: 21px;
+    margin-bottom: 32px;
+  }
+
+  .button {
+    background: $primary_color;
+    width: 100px;
+    height: 34px;
+    border-radius: 80px;
+    border: transparent;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #FFE302;
+    }
+  }
+}
